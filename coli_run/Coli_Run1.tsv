@@ -1,0 +1,97 @@
+Barcode	Sample name	Sample type	Sample host	Sample owner	Sample volume to take [uL]	Water to add; 10ul final volume [uL]	Qubit [ng/uL]	DNA volume [uL]	NOTES	Sample	Yeild MB	Host Contamination	TheoCov	Seq Result
+1	KCP_001	Phage	E. coli MG1655	Kane	10	0	7.86	9	A1	SQK-RBK114-96_barcode01.fastq.gz	0.09	0	1.2	
+2	KCP_013	Phage	E. coli MG1655	Kane	1	9	556	9	B1	SQK-RBK114-96_barcode02.fastq.gz	10.25	0.41	136.6666667	_Complete_1
+3	KCP_025	Phage	E. coli MG1655	Kane	1	9	452	9	C1	SQK-RBK114-96_barcode03.fastq.gz	13.89	8.29	185.2	_High-quality_1
+4	KCP_037	Phage	E. coli MG1655	Kane	1	9	320	9	D1	SQK-RBK114-96_barcode04.fastq.gz	13.59	0.96	181.2	
+5	KCP_049	Phage	E. coli MG1655	Kane	1	9	378	9	E1	SQK-RBK114-96_barcode05.fastq.gz	9.44	0.38	125.8666667	_Complete_1
+6	KCP_061	Phage	E. coli MG1655	Kane	1	9	602	9	F1 	SQK-RBK114-96_barcode06.fastq.gz	11.93	46.99	159.0666667	_Complete_1
+7	KCP_073	Phage	E. coli MG1655	Kane	1	9	646	9	G1	SQK-RBK114-96_barcode07.fastq.gz	104.21	0.2	1389.466667	
+8	KCP_085	Phage	E. coli MG1655	Kane	1	9	534	9	H1	SQK-RBK114-96_barcode08.fastq.gz	53.79	0	717.2	
+9	KCP_002	Phage	E. coli MG1655	Kane	1	9	514	9	A2	SQK-RBK114-96_barcode09.fastq.gz	13.19	0.02	175.8666667	_Complete_1
+10	KCP_014	Phage	E. coli MG1655	Kane	1	9	183	9	B2	SQK-RBK114-96_barcode10.fastq.gz	6.67	1.18	88.93333333	_High-quality_1
+11	KCP_026	Phage	E. coli MG1655	Kane	1	9	376	9	C2	SQK-RBK114-96_barcode11.fastq.gz	48.03	3.23	640.4	_Complete_1
+12	KCP_038	Phage	E. coli MG1655	Kane	1	9	292	9	D2	SQK-RBK114-96_barcode12.fastq.gz	35.1	7.13	468	_Complete_1
+13	KCP_050	Phage	E. coli MG1655	Kane	1	9	350	9	E2	SQK-RBK114-96_barcode13.fastq.gz	39.83	0.18	531.0666667	_Medium-quality_1
+14	KCP_062	Phage	E. coli MG1655	Kane	1	9	246	9	F2	SQK-RBK114-96_barcode14.fastq.gz	8.27	2.36	110.2666667	_Complete_1
+15	KCP_074	Phage	E. coli MG1655	Kane	1	9	300	9	G2	SQK-RBK114-96_barcode15.fastq.gz	18.4	21.99	245.3333333	_Complete_1
+16	KCP_086	Phage	E. coli MG1655	Kane	1	9	518	9	H2	SQK-RBK114-96_barcode16.fastq.gz	20.29	1.42	270.5333333	_Complete_1
+17	KCP_003	Phage	E. coli MG1655	Kane	1	9	598	9	A3	SQK-RBK114-96_barcode17.fastq.gz	8.15	0.02	108.6666667	
+18	KCP_015	Phage	E. coli MG1655	Kane	1	9	450	9	B3	SQK-RBK114-96_barcode18.fastq.gz	19.65	4.6	262	_Complete_1
+19	KCP_027	Phage	E. coli MG1655	Kane	1	9	432	9	C3	SQK-RBK114-96_barcode19.fastq.gz	25.51	4.76	340.1333333	_Complete_1
+20	KCP_039	Phage	E. coli MG1655	Kane	1	9	410	9	D3	SQK-RBK114-96_barcode20.fastq.gz	22.44	1.14	299.2	_Complete_1
+21	KCP_051	Phage	E. coli MG1655	Kane	1	9	422	9	E3	SQK-RBK114-96_barcode21.fastq.gz	28.39	6.6	378.5333333	_Complete_1
+22	KCP_063	Phage	E. coli MG1655	Kane	1	9	820	9	F3	SQK-RBK114-96_barcode22.fastq.gz	23.15	16.96	308.6666667	_Complete_1
+23	KCP_075	Phage	E. coli MG1655	Kane	1	9	520	9	G3	SQK-RBK114-96_barcode23.fastq.gz	17.99	3.98	239.8666667	_Complete_1
+24	KCP_087	Phage	E. coli MG1655	Kane	1	9	732	9	H3	SQK-RBK114-96_barcode24.fastq.gz	18.25	13.04	243.3333333	_Complete_1
+25	KCP_004	Phage	E. coli MG1655	Kane	1	9	580	9	A4	SQK-RBK114-96_barcode25.fastq.gz	111.37	0.13	1484.933333	_Complete_1
+26	KCP_016	Phage	E. coli MG1655	Kane	1	9	488	9	B4	SQK-RBK114-96_barcode26.fastq.gz	94.97	0.54	1266.266667	_Medium-quality_1
+27	KCP_028	Phage	E. coli MG1655	Kane	1	9	388	9	C4	SQK-RBK114-96_barcode27.fastq.gz	80.53	0.17	1073.733333	_Complete_1
+28	KCP_040	Phage	E. coli MG1655	Kane	1	9	272	9	D4	SQK-RBK114-96_barcode28.fastq.gz	27.88	0.65	371.7333333	_Complete_1
+29	KCP_052	Phage	E. coli MG1655	Kane	1	9	324	9	E4	SQK-RBK114-96_barcode29.fastq.gz	24.81	100	330.8	
+30	KCP_064	Phage	E. coli MG1655	Kane	1	9	326	9	F4	SQK-RBK114-96_barcode30.fastq.gz	26.51	19.21	353.4666667	_Complete_1
+31	KCP_076	Phage	E. coli MG1655	Kane	1	9	356	9	G4	SQK-RBK114-96_barcode31.fastq.gz	13.33	1.46	177.7333333	_Complete_1
+32	KCP_088	Phage	E. coli MG1655	Kane	1	9	754	9	H4	SQK-RBK114-96_barcode32.fastq.gz	41.01	4.73	546.8	_Complete_1
+33	KCP_005	Phage	E. coli MG1655	Kane	1	9	540	9	A5	SQK-RBK114-96_barcode33.fastq.gz	12.96	3.92	172.8	_Complete_1
+34	KCP_017	Phage	E. coli MG1655	Kane	1	9	448	9	B5	SQK-RBK114-96_barcode34.fastq.gz	72.46	0.37	966.1333333	_Medium-quality_1
+35	KCP_029	Phage	E. coli MG1655	Kane	1	9	404	9	C5	SQK-RBK114-96_barcode35.fastq.gz	8.08	5.84	107.7333333	_High-quality_1
+36	KCP_041	Phage	E. coli MG1655	Kane	1	9	466	9	D5	SQK-RBK114-96_barcode36.fastq.gz	52.86	2.5	704.8	_Complete_1
+37	KCP_053	Phage	E. coli MG1655	Kane	1	9	504	9	E5	SQK-RBK114-96_barcode37.fastq.gz	61.29	4.97	817.2	_Complete_1
+38	KCP_065	Phage	E. coli MG1655	Kane	1	9	384	9	F5	SQK-RBK114-96_barcode38.fastq.gz	47.25	51.36	630	_Complete_1
+39	KCP_077	Phage	E. coli MG1655	Kane	1	9	486	9	G5	SQK-RBK114-96_barcode39.fastq.gz	41.17	0.82	548.9333333	_High-quality_1
+40	KCP_089	Phage	E. coli MG1655	Kane	1	9	436	9	H5	SQK-RBK114-96_barcode40.fastq.gz	17.99	0.4	239.8666667	_High-quality_1
+41	KCP_006	Phage	E. coli MG1655	Kane	1	9	654	9	A6	SQK-RBK114-96_barcode41.fastq.gz	55.52	49.36	740.2666667	_Complete_1
+42	KCP_018	Phage	E. coli MG1655	Kane	1	9	460	9	B6	SQK-RBK114-96_barcode42.fastq.gz	56.42	0.8	752.2666667	_Medium-quality_1
+43	KCP_030	Phage	E. coli MG1655	Kane	1	9	400	9	C6	SQK-RBK114-96_barcode43.fastq.gz	7.12	1.63	94.93333333	_High-quality_1
+44	KCP_042	Phage	E. coli MG1655	Kane	1	9	344	9	D6	SQK-RBK114-96_barcode44.fastq.gz	96.87	0.41	1291.6	_High-quality_1
+45	KCP_054	Phage	E. coli MG1655	Kane	1	9	456	9	E6	SQK-RBK114-96_barcode45.fastq.gz	69.25	2	923.3333333	_Complete_1
+46	KCP_066	Phage	E. coli MG1655	Kane	1	9	344	9	F6	SQK-RBK114-96_barcode46.fastq.gz	19.25	2.69	256.6666667	_Complete_1
+47	KCP_078	Phage	E. coli MG1655	Kane	1	9	418	9	G6	SQK-RBK114-96_barcode47.fastq.gz	16.01	0.15	213.4666667	_High-quality_1
+48	KCP_090	Phage	E. coli MG1655	Kane	1	9	412	9	H6	SQK-RBK114-96_barcode48.fastq.gz	15.45	0.66	206	_Complete_1
+49	KCP_007	Phage	E. coli MG1655	Kane	1	9	552	9	A7	SQK-RBK114-96_barcode49.fastq.gz	9.65	8.16	128.6666667	_Complete_1
+50	KCP_019	Phage	E. coli MG1655	Kane	1	9	370	9	B7	SQK-RBK114-96_barcode50.fastq.gz	41.61	6.14	554.8	_Complete_1
+51	KCP_031	Phage	E. coli MG1655	Kane	1	9	298	9	C7	SQK-RBK114-96_barcode51.fastq.gz	20.18	5.38	269.0666667	_Complete_1
+52	KCP_043	Phage	E. coli MG1655	Kane	1	9	238	9	D7	SQK-RBK114-96_barcode52.fastq.gz	15.16	2.56	202.1333333	_Complete_1
+53	KCP_055	Phage	E. coli MG1655	Kane	1	9	151	9	E7	SQK-RBK114-96_barcode53.fastq.gz	16.88	13.82	225.0666667	_Complete_1
+54	KCP_067	Phage	E. coli MG1655	Kane	1	9	302	9	F7	SQK-RBK114-96_barcode54.fastq.gz	15.68	7.47	209.0666667	_Complete_1
+55	KCP_079	Phage	E. coli MG1655	Kane	1	9	448	9	G7	SQK-RBK114-96_barcode55.fastq.gz	76.54	0.54	1020.533333	_Medium-quality_1
+56	KCP_091	Phage	E. coli MG1655	Kane	1	9	286	9	H7	SQK-RBK114-96_barcode56.fastq.gz	17.92	3.41	238.9333333	_Complete_1
+57	KCP_008	Phage	E. coli MG1655	Kane	1	9	748	9	A8	SQK-RBK114-96_barcode57.fastq.gz	55.57	8.68	740.9333333	_Complete_1
+58	KCP_020	Phage	E. coli MG1655	Kane	1	9	322	9	B8	SQK-RBK114-96_barcode58.fastq.gz	5.17	0.68	68.93333333	_Complete_1
+59	KCP_032	Phage	E. coli MG1655	Kane	1	9	536	9	C8	SQK-RBK114-96_barcode59.fastq.gz	73.72	0.21	982.9333333	
+60	KCP_044	Phage	E. coli MG1655	Kane	1	9	372	9	D8	SQK-RBK114-96_barcode60.fastq.gz	13.44	3.51	179.2	_Complete_1
+61	KCP_056	Phage	E. coli MG1655	Kane	1	9	384	9	E8	SQK-RBK114-96_barcode61.fastq.gz	16.25	47.93	216.6666667	_Complete_1
+62	KCP_068	Phage	E. coli MG1655	Kane	1	9	454	9	F8	SQK-RBK114-96_barcode62.fastq.gz	29.57	4.92	394.2666667	_Complete_1
+63	KCP_080	Phage	E. coli MG1655	Kane	1	9	384	9	G8	SQK-RBK114-96_barcode63.fastq.gz	39.99	100	533.2	
+64	KCP_092	Phage	E. coli MG1655	Kane	1	9	546	9	H8	SQK-RBK114-96_barcode64.fastq.gz	17.36	3.75	231.4666667	_High-quality_1
+65	KCP_009	Phage	E. coli MG1655	Kane	1	9	368	9	A9	SQK-RBK114-96_barcode65.fastq.gz	16.46	0.54	219.4666667	_Complete_1
+66	KCP_021	Phage	E. coli MG1655	Kane	1	9	364	9	B9	SQK-RBK114-96_barcode66.fastq.gz	7.94	1.12	105.8666667	_Complete_1
+67	KCP_033	Phage	E. coli MG1655	Kane	1	9	500	9	C9	SQK-RBK114-96_barcode67.fastq.gz	65.47	0.12	872.9333333	_Complete_1
+68	KCP_045	Phage	E. coli MG1655	Kane	1	9	368	9	D9	SQK-RBK114-96_barcode68.fastq.gz	94.86	4.1	1264.8	_Complete_1
+69	KCP_057	Phage	E. coli MG1655	Kane	1	9	374	9	E9	SQK-RBK114-96_barcode69.fastq.gz	28.4	88.98	378.6666667	_Complete_1
+70	KCP_069	Phage	E. coli MG1655	Kane	1	9	392	9	F9	SQK-RBK114-96_barcode70.fastq.gz	10.17	1.12	135.6	_Complete_1
+71	KCP_081	Phage	E. coli MG1655	Kane	1	9	496	9	G9	SQK-RBK114-96_barcode71.fastq.gz	73.18	7.25	975.7333333	_Complete_1
+72	KCP_093	Phage	E. coli MG1655	Kane	1	9	544	9	H9	SQK-RBK114-96_barcode72.fastq.gz	18.26	3.19	243.4666667	_Complete_1
+73	KCP_010	Phage	E. coli MG1655	Kane	1	9	628	9	A10	SQK-RBK114-96_barcode73.fastq.gz	66.43	2.05	885.7333333	_Complete_1
+74	KCP_022	Phage	E. coli MG1655	Kane	1	9	302	9	B10	SQK-RBK114-96_barcode74.fastq.gz	18.05	29.1	240.6666667	_High-quality_1
+75	KCP_034	Phage	E. coli MG1655	Kane	1	9	408	9	C10	SQK-RBK114-96_barcode75.fastq.gz	17.74	0.4	236.5333333	_Complete_1
+76	KCP_046	Phage	E. coli MG1655	Kane	1	9	490	9	D10	SQK-RBK114-96_barcode76.fastq.gz	13.81	0.18	184.1333333	_Complete_1
+77	KCP_058	Phage	E. coli MG1655	Kane	1	9	402	9	E10	SQK-RBK114-96_barcode77.fastq.gz	21.56	10.55	287.4666667	_Complete_1
+78	KCP_070	Phage	E. coli MG1655	Kane	1	9	394	9	F10	SQK-RBK114-96_barcode78.fastq.gz	14.61	1.49	194.8	_Complete_1
+79	KCP_082	Phage	E. coli MG1655	Kane	1	9	546	9	G10	SQK-RBK114-96_barcode79.fastq.gz	102.76	17.94	1370.133333	_Complete_1
+80	KCP_094	Phage	E. coli MG1655	Kane	1	9	666	9	H10	SQK-RBK114-96_barcode80.fastq.gz	98.74	2.42	1316.533333	_Complete_1
+81	KCP_011	Phage	E. coli MG1655	Kane	1	9	478	9	A11	SQK-RBK114-96_barcode81.fastq.gz	7.78	4.89	103.7333333	_High-quality_1
+82	KCP_023	Phage	E. coli MG1655	Kane	1	9	316	9	B11	SQK-RBK114-96_barcode82.fastq.gz	11.2	2.8	149.3333333	_High-quality_1
+83	KCP_035	Phage	E. coli MG1655	Kane	1	9	650	9	C11	SQK-RBK114-96_barcode83.fastq.gz	91.58	7.75	1221.066667	_Complete_1
+84	KCP_047	Phage	E. coli MG1655	Kane	1	9	548	9	D11	SQK-RBK114-96_barcode84.fastq.gz	70.89	24.44	945.2	_Complete_1
+85	KCP_059	Phage	E. coli MG1655	Kane	1	9	408	9	E11	SQK-RBK114-96_barcode85.fastq.gz	40.44	15.72	539.2	_Complete_1
+86	KCP_071	Phage	E. coli MG1655	Kane	1	9	534	9	F11	SQK-RBK114-96_barcode86.fastq.gz	74.28	4.79	990.4	_Complete_1
+87	KCP_083	Phage	E. coli MG1655	Kane	1	9	438	9	G11	SQK-RBK114-96_barcode87.fastq.gz	130.56	46.37	1740.8	_Complete_1
+88	KCP_095	Phage	E. coli MG1655	Kane	1	9	476	9	H11	SQK-RBK114-96_barcode88.fastq.gz	20.39	0.78	271.8666667	_Complete_1
+89	KCP_012	Phage	E. coli MG1655	Kane	1	9	494	9	A12	SQK-RBK114-96_barcode89.fastq.gz	15.08	9.74	201.0666667	_Complete_1
+90	KCP_024	Phage	E. coli MG1655	Kane	1	9	628	9	B12	SQK-RBK114-96_barcode90.fastq.gz	53.08	0.6	707.7333333	_Complete_1
+91	KCP_036	Phage	E. coli MG1655	Kane	1	9	744	9	C12	SQK-RBK114-96_barcode91.fastq.gz	31.21	18.09	416.1333333	_Complete_1
+92	KCP_048	Phage	E. coli MG1655	Kane	1	9	476	9	D12	SQK-RBK114-96_barcode92.fastq.gz	33.65	3.92	448.6666667	
+93	KCP_060	Phage	E. coli MG1655	Kane	1	9	882	9	E12	SQK-RBK114-96_barcode93.fastq.gz	120.28	2.64	1603.733333	_Complete_1
+94	KCP_072	Phage	E. coli MG1655	Kane	1	9	500	9	F12	SQK-RBK114-96_barcode94.fastq.gz	22.88	0.32	305.0666667	_Complete_1
+95	KCP_084	Phage	E. coli MG1655	Kane	1	9	800	9	G12	SQK-RBK114-96_barcode95.fastq.gz	70.14	2.29	935.2	_Complete_1
+96	KCP_096	Phage	E. coli MG1655	Kane	1	9	252	9	H12	SQK-RBK114-96_barcode96.fastq.gz	10.62	0.21	141.6	_Complete_1
