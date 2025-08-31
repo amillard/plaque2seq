@@ -3,6 +3,8 @@ import shutil
 import fnmatch
 import argparse
 
+#clean up assembly folders to lave only required files
+
 # Directories with literal names to delete
 TARGET_DIRS = {
     'taxmyphage', 'pipeline_state' ,'clean', 'bam', 'polish1', 'polish2', 'tmp', 'misc', 'unicycler*' ,  'K21', 'K33', 'K55', 'K77', 'K99', 'K127',  
@@ -60,7 +62,7 @@ def clean_directory(main_directory, dry_run=False):
             if any(fnmatch.fnmatch(filename, pattern) for pattern in DELETE_PATTERNS):
                 _delete(file_path, dry_run)
 
-    print("\n✅ DRY RUN complete. No changes were made." if dry_run else "\n✅ Cleanup complete.")
+    print("\nDRY RUN complete. No changes were made." if dry_run else "\n✅ Cleanup complete.")
 
 def _delete(path, dry_run, is_dir=False):
     if dry_run:

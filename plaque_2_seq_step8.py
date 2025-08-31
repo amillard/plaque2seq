@@ -51,7 +51,7 @@ def run_minimap2(sample, fasta_file, reads_dir, bam_dir):
         subprocess.run(cmd, shell=True, check=True, executable="/bin/bash")
         return sample, fasta_file, bam_path, None
     except subprocess.CalledProcessError as e:
-        return sample, fasta_file, None, f"❌ Mapping failed: {e}"
+        return sample, fasta_file, None, f"Ooops Mapping failed: {e}"
 
 def compute_bam_stats(bam_path):
     bam = pysam.AlignmentFile(bam_path, "rb")
@@ -96,7 +96,7 @@ def worker(args):
 
 def main():
     parser = argparse.ArgumentParser(description="Map reads to contigs and compute stats (parallelized).")
-    parser.add_argument("--dict", required=True, help="2-column tab file with sample names in column 2")
+    parser.add_argument("--dict", required=True, help="2-column tab file with sample names in column 2 bc_2sample")
     parser.add_argument("--clean_dir", required=True, help="Directory with *.fa / *.fasta")
     parser.add_argument("--reads_dir", required=True, help="Directory with *_short_300.fq.gz files")
     parser.add_argument("--bam_dir", required=True, help="Output directory for BAMs")
@@ -109,10 +109,10 @@ def main():
     matches = find_fasta_matches(args.clean_dir, sample_names)
 
     if not matches:
-        print("❌ No matching FASTA files found.")
+        print("NO matching FASTA files found!")
         return
 
-    print(f"🔍 {len(matches)} matching FASTA files found. Starting parallel processing...\n")
+    print(f" {len(matches)} matching FASTA files found. Starting parallel processing...\n")
 
     tasks = [(sample, fasta, args.reads_dir, args.bam_dir) for sample, fasta in matches]
 
@@ -122,10 +122,10 @@ def main():
         for future in as_completed(futures):
             sample, fasta_file, bam, total, mapped, unmapped, pct, mean, median, error = future.result()
             if error:
-                print(f"❌ {sample} → Error: {error}")
+                print(f" {sample} → Error: {error}")
                 continue
             out.write(f"{sample}\t{os.path.basename(fasta_file)}\t{bam}\t{total}\t{mapped}\t{unmapped}\t{pct:.2f}\t{mean:.2f}\t{median:.2f}\n")
-            print(f"✅ {sample}: mapped={mapped}/{total}, unmapped={unmapped}, mean={mean:.2f}x, median={median:.2f}x")
+            print(f" {sample}: mapped={mapped}/{total}, unmapped={unmapped}, mean={mean:.2f}x, median={median:.2f}x")
 
 if __name__ == "__main__":
     main()

@@ -38,13 +38,13 @@ def download_reference(accession, output_dir="downloaded_refs"):
     os.makedirs(output_dir, exist_ok=True)
     output_path = os.path.join(output_dir, f"{accession}.fna")
     if os.path.exists(output_path):
-        print(f"🧬 Reference {accession} already exists. Skipping download.")
+        print(f"Reference {accession} already exists. Skipping download.")
         return output_path
-    print(f"⬇️ Downloading reference {accession}...")
+    print(f"Downloading reference {accession}...")
     cmd = f"esearch -db nucleotide -query {accession} | efetch -format fasta > {output_path}"
     result = subprocess.run(cmd, shell=True)
     if result.returncode != 0:
-        sys.exit(f"❌ Failed to download accession {accession}")
+        sys.exit(f" Failed to download accession {accession}")
     return output_path
 
 def map_and_count_mapped(fastq_path, ref_path, preset, threads):
@@ -58,7 +58,7 @@ def map_and_count_mapped(fastq_path, ref_path, preset, threads):
         try:
             subprocess.run(cmd_str, shell=True, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         except subprocess.CalledProcessError as e:
-            sys.exit(f"❌ minimap2 or samtools failed on {ref_path}:\n{e.stderr.decode()}")
+            sys.exit(f" minimap2 or samtools failed on {ref_path}:\n{e.stderr.decode()}")
         with pysam.AlignmentFile(bam_file, "rb") as bam:
             return sum(1 for r in bam.fetch(until_eof=True) if not r.is_unmapped)
 
@@ -75,7 +75,7 @@ def main():
 
     fastqs = sorted(glob.glob(os.path.join(args.input, args.pattern)))
     if not fastqs:
-        sys.exit(f"❌ No files matching {args.pattern} found in {args.input}")
+        sys.exit(f" No files matching {args.pattern} found in {args.input}")
 
     # Get references
     if args.accession:
@@ -85,12 +85,12 @@ def main():
     elif args.ref_dir:
         refs = sorted(glob.glob(os.path.join(args.ref_dir, "*.fna")))
         if not refs:
-            sys.exit(f"❌ No .fna files found in {args.ref_dir}")
+            sys.exit(f"No .fna files found in {args.ref_dir}")
     else:
-        sys.exit("❌ Must provide --references, --ref-dir, or --accession")
+        sys.exit("Must provide --references, --ref-dir, or --accession")
 
     if args.dry_run:
-        print("🔍 Dry run: Files and references to be processed:")
+        print("Dry run: Files and references to be processed:")
         for fq in fastqs:
             for ref in refs:
                 print(f"[DRY-RUN] {os.path.basename(fq)} vs {os.path.basename(ref)}")
@@ -118,7 +118,7 @@ def main():
         for row in results:
             writer.writerow(row)
 
-    print(f"\n✅ Results written to {args.output}")
+    print(f"\nResults written to {args.output}")
 
 if __name__ == "__main__":
     main()

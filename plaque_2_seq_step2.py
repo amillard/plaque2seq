@@ -27,12 +27,12 @@ def normalize_reads(input_file: str, target: int = 150, output_dir: str = None) 
         f"target={target} qin=33 ignorebadquality"
     )
 
-    print(f"🔄 Normalizing {input_file!r} → {output_file!r} (target={target})")
+    print(f"Normalizing {input_file!r} → {output_file!r} (target={target})")
     try:
         subprocess.run(["bash", "-lc", cmd], check=True)
-        print(f"✅ Normalization complete: {output_file!r}")
+        print(f"Normalization complete: {output_file!r}")
     except subprocess.CalledProcessError as e:
-        print(f"❌ Normalization failed for {input_file!r}\nError: {e}")
+        print(f"Normalization failed for {input_file!r}\nError: {e}")
         raise
 
     return output_file
@@ -51,12 +51,12 @@ def main():
     files = sorted(glob.glob(pattern))
 
     if not files:
-        print(f"❗ No files found matching pattern: {pattern}")
+        print(f"!No files found matching pattern: {pattern}")
         return
 
     for fq in files:
         if "norm" in os.path.basename(fq):
-            print(f"⏭️  Skipping {fq} (already normalized)")
+            print(f"  Skipping {fq} (already normalized)")
             continue
         normalize_reads(fq, target=args.target, output_dir=output_dir)
 

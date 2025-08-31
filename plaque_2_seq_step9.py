@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 
+""""Runs pilon on a set of bam files, matching based on bc_2sample file as usual
+corrects any issues.In testing didnt find errors when > 30x was used """
+
 import os
 import glob
 import argparse
@@ -45,7 +48,7 @@ def run_pilon(sample, fasta, bam, outdir):
     changes_file = os.path.join(outdir, f"{sample}.changes.txt")
 
     if os.path.exists(expected_output):
-        print(f"⏩ Skipping {output_prefix}: output already exists.")
+        print(f"Skipping {output_prefix}: output already exists.")
         return
 
     cmd = [
@@ -58,11 +61,11 @@ def run_pilon(sample, fasta, bam, outdir):
     ]
 
     try:
-        print(f"🚀 Running Pilon: sample={sample}, genome={os.path.basename(fasta)}, bam={os.path.basename(bam)}")
+        print(f"Running Pilon: sample={sample}, genome={os.path.basename(fasta)}, bam={os.path.basename(bam)}")
         subprocess.run(cmd, check=True)
-        print(f"✅ Finished: {output_prefix}, changes → {changes_file}")
+        print(f"Finished: {output_prefix}, changes → {changes_file}")
     except subprocess.CalledProcessError as e:
-        print(f"❌ Pilon failed for {output_prefix}:\n{e}")
+        print(f" Pilon failed for {output_prefix}:\n{e}")
 
 def main():
     parser = argparse.ArgumentParser(description="Run Pilon on genome/BAM pairs per sample.")
@@ -78,7 +81,7 @@ def main():
     for sample in sorted(samples):
         pairs = find_matching_pairs(sample, args.clean_dir, args.bam_dir)
         if not pairs:
-            print(f"⚠️  No FASTA/BAM pair found for {sample}")
+            print(f" No FASTA/BAM pair found for {sample}")
             continue
 
         for _, fasta, bam in pairs:

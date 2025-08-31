@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Script: extend_prefix_match.py
+Script:
 
 Detects and trims circular overlap in assembled contigs by matching
 prefixes to suffixes. Produces trimmed FASTA and logs results.
@@ -9,7 +9,7 @@ circular, this is by design. Needs to be trimmed prior to re-ordering with
 dnaapler.
 
 Usage:
-    python extend_prefix_match.py --indir assemblies/ --outdir trimmed/ --prefix run1
+    python plaque_2_seq_step7_per_run.py --indir assemblies/ --outdir trimmed/ --prefix run1
 """
 
 import sys
@@ -113,7 +113,7 @@ def main():
 
     input_files = sorted(input_files)
     if not input_files:
-        print("❌ No input FASTA files provided or found.")
+        print("No input FASTA files provided or found.")
         sys.exit(1)
 
     # Open log file once for writing

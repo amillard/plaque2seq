@@ -112,7 +112,7 @@ def main():
 
     input_files = sorted(input_files)
     if not input_files:
-        print("❌ No input FASTA files provided or found.")
+        print("No input FASTA files provided or found.")
         sys.exit(1)
 
     # Open log file once for writing

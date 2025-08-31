@@ -48,10 +48,10 @@ def chunk_file(input_file: str, sample_name: str, chunk_size: int = 300, output_
 
     if os.path.exists(out_name):
         if _test_gzip(out_name):
-            print(f"⚠️ Skipping {input_file!r}: {out_name!r} exists & is valid.")
+            print(f"Skipping {input_file!r}: {out_name!r} exists & is valid.")
             return out_name
         else:
-            print(f"⚠️Corrupted archive {out_name!r}, removing & retrying.")
+            print(f"Corrupted archive {out_name!r}, removing & retrying.")
             os.remove(out_name)
 
     for attempt in (1, 2):

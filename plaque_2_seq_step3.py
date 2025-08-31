@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+#assemble genomes multiple at the same time
+
 import os
 import glob
 import subprocess
@@ -30,7 +32,7 @@ def assemble_reads(input_file: str, threads: int, output_base: str) -> str:
     os.makedirs(output_base, exist_ok=True)
 
     if os.path.exists(out_dir):
-        print(f"⚠️  Skipping assembly for {input_file!r}: {out_dir!r} already exists.")
+        print(f"    Skipping assembly for {input_file!r}: {out_dir!r} already exists.")
         return out_dir
 
     cmd = [
@@ -41,9 +43,9 @@ def assemble_reads(input_file: str, threads: int, output_base: str) -> str:
         "-o", out_dir,
     ]
 
-    print(f"🚧 Assembling {input_file!r} → {out_dir!r} with {threads} threads")
+    print(f" Assembling {input_file!r} → {out_dir!r} with {threads} threads")
     subprocess.run(cmd, check=True)
-    print(f"✅ Assembly complete: {out_dir!r}")
+    print(f"Assembly complete: {out_dir!r}")
     return out_dir
 
 def main():
@@ -59,10 +61,10 @@ def main():
     files = sorted(glob.glob(pattern))
 
     if not files:
-        print("❌ No *_norm.fq.gz files found.")
+        print(" No *_norm.fq.gz files found.")
         return
 
-    print(f"🔎 Found {len(files)} files. Starting parallel assembly...")
+    print(f" Found {len(files)} files. Starting parallel assembly...")
 
     with ProcessPoolExecutor(max_workers=args.workers) as executor:
         future_to_file = {
@@ -74,7 +76,7 @@ def main():
             try:
                 result = future.result()
             except Exception as e:
-                print(f"❌ Failed to assemble {f}: {e}")
+                print(f" Failed to assemble {f}: {e}")
 
 if __name__ == "__main__":
     main()

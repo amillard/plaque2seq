@@ -27,7 +27,7 @@ def extract_contigs(
     output_base_dir:    where to write per-contig FASTAs
     dry_run:            if True, only print what would be done
     """
-    # Define the expected columns (no header in TSV)
+    # Define the expected columns (no header in TSV) eg checkv OUTPUT
     columns = [
         "dir", "contig_id", "contig_length", "provirus", "proviral_length",
         "gene_count", "viral_genes", "host_genes", "checkv_quality",

@@ -46,15 +46,15 @@ def run_checkv_on_fasta(fasta: str, threads: int, db_dir: str) -> None:
         if os.path.isdir(tmp):
             log(f"🧹 Removing tmp dir {tmp}")
             subprocess.run(f"rm -rf {tmp}", shell=True, check=True)
-        log(f"✅ CheckV finished for {fasta}")
+        log(f"CheckV finished for {fasta}")
     except subprocess.CalledProcessError as e:
-        log(f"❌ CheckV failed for {fasta} (rc={e.returncode})")
+        log(f"CheckV failed for {fasta} (rc={e.returncode})")
 
 def find_contigs(base_dir: str) -> list:
     """
     Return all contigs.fasta paths within base_dir/*/contigs.fasta
     and base_dir/*/*/contigs.fasta
-    standard way these contigs are stored
+    standard way these contigs are stored using pipeline
     """
     p1 = glob.glob(os.path.join(base_dir, "*", "contigs.fasta"))
     p2 = glob.glob(os.path.join(base_dir, "*", "*", "contigs.fasta"))
@@ -88,7 +88,7 @@ def process_directory(
             try:
                 future.result()
             except Exception as e:
-                log(f"❌ Exception for {fasta}: {e}")
+                log(f"Exception for {fasta}: {e}")
 
 # === CLI ===
 if __name__ == "__main__":

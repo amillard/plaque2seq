@@ -51,7 +51,7 @@ def main():
                     counts["Medium-quality"],
                 ])
             except Exception as e:
-                print(f"❌ Failed to process {quality_path}: {e}")
+                print(f"Failed to process {quality_path}: {e}")
 
     print(f"Summary written to {output_file}")
 
