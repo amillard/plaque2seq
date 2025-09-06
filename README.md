@@ -1,11 +1,9 @@
 # Plaque-2-seq
 
 
-# Plaque-2-Seq
-
 <img src="images/logo.png" alt="Plaque-2-Seq Logo">
 
-**Plaque-2-Seq** is a streamlined workflow to recover and sequence bacteriophage genomes directly from a plaque — producing complete, annotated genomes within **5 days**.
+**Plaque-2-Seq** is a streamlined process to go from plaques to complete annotated genomes in **5 days**. Allowing a single user to sequence 100s of genomes in a week. Cost per genome when applied at scale   .
 
 ---
 
