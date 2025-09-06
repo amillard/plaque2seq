@@ -3,7 +3,7 @@
 
 <img src="images/logo.png" alt="Plaque-2-Seq Logo">
 
-**Plaque-2-Seq** is a streamlined process to go from plaques to complete annotated genomes in **5 days**. Allowing a single user to sequence 100s of genomes in a week. Cost per genome when applied at scale is as little at £15 .
+**Plaque-2-Seq** is a streamlined process to go from plaques to complete annotated genomes in **5 days**. Allowing a single user to sequence 100s of genomes in a week. Cost per genome when applied at scale is as little at £7.50.
 
 ---
 
@@ -42,10 +42,11 @@ Output: high-quality, complete bacteriophage genomes.
 
 ---
 
-Developed at the [Becky Mayer Centre of Reserach](https://le.ac.uk/research/centres/phage-research)
+Developed at the [Becky Mayer Centre of Reserach](https://le.ac.uk/research/centres/phage-research). Independently 
+tested by research groups at the Univeristy of Warwick and Sheffield University. 
 
 ## Preprint & Protocol 
 
 Preprint and Full protocol will be posted here very soon (last updated 06.09.2025)
 
- 
+Contact Andy Millard  [adm39@le.ac.uk](mailto:adm39@le.ac.uk) for more details. 
