@@ -42,7 +42,7 @@ Output: high-quality, complete bacteriophage genomes.
 
 ---
 
-Developed at the [Becky Mayer Centre of Reserach](https://le.ac.uk/research/centres/phage-research). Independently 
+Developed at the [Becky Mayer Centre for Phage Research](https://le.ac.uk/research/centres/phage-research). Independently 
 tested by research groups at the Univeristy of Warwick and Sheffield University. 
 
 ## Preprint & Protocol 
