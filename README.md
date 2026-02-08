@@ -47,10 +47,10 @@ tested by research groups at the Univeristy of Warwick and Sheffield University.
 
 ## Preprint & Protocol 
 
-Link to preprint is [here] (https://www.biorxiv.org/content/10.1101/2025.11.01.684647v1)
+Link to preprint is [here](https://www.biorxiv.org/content/10.1101/2025.11.01.684647v1)
 
 Within the Assembly folder are scripts to run the entire pipeline. 
-What each file does is list in the the markdown file [here] (https://github.com/amillard/plaque2seq/blob/main/assembly_process/plaque_2_seq_pipeline.md)
+What each file does is list in the the markdown file [here](https://github.com/amillard/plaque2seq/blob/main/assembly_process/plaque_2_seq_pipeline.md)
 Explaining input and output of each scripts 
 
 Contact Andy Millard  [adm39@le.ac.uk](mailto:adm39@le.ac.uk) for more details. 
